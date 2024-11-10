@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS for styling -->
 </head>
 <body>
 
@@ -14,23 +13,10 @@
     <!-- Date -->
     <p><strong>Date:</strong> November 25, 2024</p>
 
-    <!-- Location with Map -->
+    <!-- Location -->
     <p><strong>Location:</strong> Central Park, New York City</p>
-    <iframe 
-        src="https://www.google.com/maps/embed/v1/place?q=Central+Park,New+York+City&key=YOUR_API_KEY" 
-        width="600" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy">
-    </iframe>
 
-    <!-- Calendar Invitations -->
-    <h2>Add to Calendar</h2>
-    <a href="event.ics" download>Download iCal</a> |
-    <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Event+Title&dates=20241125T120000Z/20241125T140000Z&details=Join+us+for+the+event!&location=Central+Park,+New+York+City" target="_blank">Add to Google Calendar</a>
-
-    <!-- Response Form -->
+    <!-- RSVP Form -->
     <h2>RSVP</h2>
     <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <label for="name">Name:</label><br>
@@ -38,9 +24,6 @@
         
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="comments">Comments:</label><br>
-        <textarea id="comments" name="comments"></textarea><br><br>
         
         <input type="submit" value="Submit">
     </form>
